@@ -1,0 +1,37 @@
+# STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
+install.packages("dplyr")
+install.packages("Rtools")
+library("dplyr")
+install.packages("base.rms")
+install.packages("base64")
+library("dplyr")
+rename(Tranform_data, ride_id = trip_id)
+install.packages("plyr")
+df1<- plyr::rename(Tranform_data, ride_id = trip_id)
+library(plyr)
+install.packages("dplyr")
+library(dplyr)
+rename(Tranform_data,ride_id = trip_id)
+data_new <- plyr::rename(Tranform_data, c("ride_id" = "trip_id"))
+rename(Tranform_data, rideable_type = bike_id)
+data2_new <- plyr::rename(all_data_set, c("ride_id" = "trip_id",
+"rideable_type" = "bikeid",
+"started_at" = "start_time",
+"ended_at" = "end_time",
+"start_station_name" = "from_station_name",
+"start_station_id" = "from_station_id",
+"end_station_name" = "to_station_name",
+"end_station_id" = "to_station_id",
+"member_casual" = "usertype"))
+
+colnames(data_new)
+str(data2_new)
+data2_new <- mutate(data2_new, "ride_id" = as.character("ride_id")
+                   ,"rideable_type" = as.character("rideable_type"))
+
+data2_new <- data2_new %>%  
+  dplyr::select(-c(start_lat, start_lng, end_lat, end_lng))
+
+
+
+
