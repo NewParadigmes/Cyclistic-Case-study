@@ -1,4 +1,3 @@
-# STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
 install.packages("dplyr")
 install.packages("Rtools")
 library("dplyr")
