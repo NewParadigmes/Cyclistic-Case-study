@@ -52,10 +52,10 @@ Visualizations were developed in Google Data Studio to observe differential tren
 
 
 ### Total ride share
-![piechart](viz/pie_chart.PNG)
+![piechart]([viz/pie_chart.PNG](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link))
 #### **Insights**
-* 58.6% of total rides (3.4M) were taken by annual members.
-* 41.4% of total rides were taken by casual riders.
+* 58.95% of total rides (3.2M) were taken by annual members.
+* 41.05% of total rides were taken by casual riders.
 * Annual members form the majority of business for the company and maximizing on this number should be the focus in the long run.
 
 
