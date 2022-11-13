@@ -47,12 +47,13 @@ How do annual members and casual riders use Cyclistic bikes differently ?
 > Following the cleaning and consolidating data in one table, `3,476,354` rows were returned for proceeding to analysis. All of this was achieved using [this single master query](single_query.sql). `JOIN`, `WITH`, `UNION ALL`, `WHERE`, _subqueries_ and many other SQL functions were used here.
 ## Analysis and Viz
 
+Check this [link](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link) to get acceess for interactive viz. 
 The final dataset containing trip data of roughly 3.4 million ride records was analyzed. 
 Visualizations were developed in Google Data Studio to observe differential trends between the usage by casual riders and annual members.  
 
 
 ### Total ride share
-![piechart]([viz/pie_chart.PNG](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link))
+![piechart]([viz/pie_chart.PNG](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 #### **Insights**
 * 58.95% of total rides (3.2M) were taken by annual members.
 * 41.05% of total rides were taken by casual riders.
