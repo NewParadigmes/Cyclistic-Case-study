@@ -29,7 +29,7 @@ How do annual members and casual riders use Cyclistic bikes differently ?
 
 * **Data source** : Public data from Motivate International Inc. (Divvy Bicycle Sharing Service from Chicago) under this [license](https://www.divvybikes.com/data-license-agreement).
 * [Cyclistic’s historical trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) (2013 onwards) available in `.csv` format. 
-* **Our date range** : April 2020 to April 2021 (608 MB data)
+* **Our date range** : April 2020 to March 2021 (142 MB data)
 * The dataset has individual ride records consisting of ride start-end date & time, station information, bike type, rider type (casual/member).
 * Data uploaded to Google Cloud Storage(GCS) in order to import the large files.
 
