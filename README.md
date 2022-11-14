@@ -35,33 +35,27 @@ How do annual members and casual riders use Cyclistic bikes differently ?
 
 ## Processing and Cleaning
 
-* Data imported from GCS into **BigQuery** for manipulation and analysis using SQL.
-* Visualizations to be developed in **Google Data Studio**.
-* Datatypes made consistent and then consolidated into one view using [this query](https://github.com/shivamgarg444/Cyclistic-Case-Study/blob/main/uncleaned_compile.sql).
-* To assist in analysis, 4 new columns were added (start point location, end point location, ride start day name and ride duration in seconds).
-* `3,742,624` rows were returned but required cleaning.
+* Data imported from GCS into **BigQuery** for manipulation and analysis using R.
+* Visualizations to be developed in **Tableau**.
+* Datatypes made consistent and then consolidated into one view using [this query](-)
+* `3,284,237` rows were returned but required cleaning.
+
 * **Cleaning process** :
-  * Missing start and end station names found using [this query](station_check.sql).
-  * Other columns checked using [this query](columns_check.sql).
-  * Negative and zero ride duration values found using [this query](duration_check.sql).
-> Following the cleaning and consolidating data in one table, `3,476,354` rows were returned for proceeding to analysis. All of this was achieved using [this single master query](single_query.sql). `JOIN`, `WITH`, `UNION ALL`, `WHERE`, _subqueries_ and many other SQL functions were used here.
+
 ## Analysis and Viz
 
-Check this [link](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link) to get acceess for interactive viz. 
-The final dataset containing trip data of roughly 3.4 million ride records was analyzed. 
-Visualizations were developed in Google Data Studio to observe differential trends between the usage by casual riders and annual members.  
+Check this [link](https://public.tableau.com/views/interactivevizualization/TotalRideshare?:language=en-US&:display_count=n&:origin=viz_share_link) to get acceess for interactive Tableau vizualization. 
+The final dataset containing trip data of roughly 3.3 million ride records was analyzed. 
+Visualizations were developed in Tableau to observe differential trends between the usage by casual riders and annual members.  
 
 
-### Total ride share
-![piechart]([viz/pie_chart.PNG](https://public.tableau.com/views/Cyclistproject-Rideshare/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 #### **Insights**
-* 58.95% of total rides (3.2M) were taken by annual members.
+* 58.95% of total rides (3.3M) were taken by annual members.
 * 41.05% of total rides were taken by casual riders.
 * Annual members form the majority of business for the company and maximizing on this number should be the focus in the long run.
 
 
 ### Weekly distribution of number of rides
-![line_chart_1](viz/line_chart_1.PNG)
 #### **Insights**
 * Clearly, the rides taken by casual riders __peak__ throughout the __weekend__ as compared to that of annual members which remains relatively flat. 
 * About __50% less__ casual riders use the rentals during weekdays as compared to weekends.  
@@ -69,7 +63,6 @@ Visualizations were developed in Google Data Studio to observe differential tren
 
 
 ### Weekly distribution of average ride duration
-![line_chart_2](viz/line_chart_2.PNG)
 #### **Insights**
 * The average ride duration of casual members is  about __3 times__ that of annual members.
 * The average ride duration both type of riders increase on weekends.
@@ -77,14 +70,12 @@ Visualizations were developed in Google Data Studio to observe differential tren
 
 
 ### Ride duration vs Ride distance
-![bars](viz/bars_dist_duration.PNG)
 #### **Insights**
 * The plots clearly show the contrast between average ride duration and average ride distance  for both user types. 
 * While both user types ride a __similar average distance__, casual riders ride for __3x longer duration__ as compared to annual members.     
 
 
 ### Hourly distribution of number of rides
-![bar_hour](viz/bar_hour.PNG)
 #### **Insights**
 * The proportion of casual riders increases in the non-commuting hours i.e. in forenoon hours and after 8pm from __18%__ of total riders to __50%__ of total riders.
 * Annual members take the major chunk of the rides during peak-travel hours in the morning and evening to upto __82%__ of total riders. 
@@ -92,7 +83,6 @@ Visualizations were developed in Google Data Studio to observe differential tren
 
 
 ### Monthly distribution of number of rides - Seasonality 
-![bar_season](viz/bar_season.PNG)
 #### **Insights**
 * The proportion of casual riders __falls__ drastically during winter months(Dec-Feb) to only about __20%__ of total riders.
 * The proportion of casual riders goes __maximum__ in the months of June, July, August and September to upto __40%__ of total riders.  
