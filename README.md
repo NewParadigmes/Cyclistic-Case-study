@@ -29,15 +29,14 @@ How do annual members and casual riders use Cyclistic bikes differently ?
 
 * **Data source** : Public data from Motivate International Inc. (Divvy Bicycle Sharing Service from Chicago) under this [license](https://www.divvybikes.com/data-license-agreement).
 * [Cyclistic’s historical trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) (2013 onwards) available in `.csv` format. 
-* **Our date range** : May 2020 to April 2021 (608 MB data)
+* **Our date range** : April 2020 to April 2021 (608 MB data)
 * The dataset has individual ride records consisting of ride start-end date & time, station information, bike type, rider type (casual/member).
 * Data uploaded to Google Cloud Storage(GCS) in order to import the large files.
 
 ## Processing and Cleaning
 
-* Data imported from GCS into **BigQuery** for manipulation and analysis using R.
+* Data imported from GCS into **RStudio** for manipulation and analysis using R.
 * Visualizations to be developed in **Tableau**.
-* Datatypes made consistent and then consolidated into one view using [this query](-)
 * `3,284,237` rows were returned but required cleaning.
 
 * **Cleaning process** :
@@ -91,7 +90,6 @@ Visualizations were developed in Tableau to observe differential trends between 
 ## Conclusion and Recommendations
 
 * A common observation is that __casual riders__ are using the bike rentals for __leisure and tourism__ purposes while __annual members__ use it predominantly for __commuting__ purposes.
-* Targetted on-ground marketing strategies should be devised at places of leisure like parks, theatres, restaurants and cafes.  
 * Discounting campaigns for casual riders on weekdays can motivate them to use the service for commuting. 
 * Tools like push notifications can be used to attract casual riders during the lean periods of the day.
 * A campaign for the winter months, maybe clubbed with holidays or Christmas can help pick up the numbers during those months. 
